@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @resume_datum %>
+
+<div>
+  <%= link_to "Edit this resume data", edit_resume_datum_path(@resume_datum) %> |
+  <%= link_to "Back to resume data", resume_data_path %>
+
+  <%= button_to "Destroy this resume data", @resume_datum, method: :delete %>
+</div>

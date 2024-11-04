@@ -1,0 +1,14 @@
+<div id="<%= dom_id resume_datum %>">
+  <p>
+    <strong>Name:</strong>
+    <%= resume_datum.name %>
+  </p>
+
+  <p>
+    <strong>Files:</strong>
+    <% resume_datum.files.each do |file| %>
+      <div><%= link_to file.filename, file %></div>
+    <% end %>
+  </p>
+
+</div>
